@@ -1,0 +1,250 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>school</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width:device-width,initial-scale:1.0">
+	<link rel="stylesheet" type="text/css" href="catalog.css">
+	<link rel="stylesheet" href="{% static 'catalog/catalog.css' %}">
+	<script src="jquery.js"></script>
+    <style>
+      .w3-content w3-display-container {
+        position: relative;
+        text-align: center;
+        color: black;
+
+      }
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+      .sticky + .content {
+        padding-top: 102px;
+      }
+    </style>
+
+</head>
+<body>
+	
+<div class="w3-container w3-indigo w3-margin header" id="myHeader">
+    <div class="w3-container w3-indigo w3-margin w3-center w3-xlarge w3-mobile">
+    	{% load static %} <img class="w3-left w3-indigo" style="height: 100px;" src="{% static "catalog/images/badge.jpg" %}" alt="home"/>
+        <p>BULUCHEKE SECONDARY SCHOOL</p>
+     <div class="w3-row-padding w3-container w3-margin w3-display-topright">
+     <a target="_blank" title="follow us on instagram" href="http://www.instagram.com/nagulama.moses"><img alt="follow us on instagram" src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram30x30.png" border=0></a>
+
+      <a target="_blank" title="follow us on facebook" href="http://www.facebook.com/nagulama.moses"><img alt="follow us on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook30x30.png" border=0></a>
+
+      <a target="_blank" title="follow us on google plus" href="https://plus.google.com/nagulama.moses"><img alt="follow us on google plus" src="https://c866088.ssl.cf3.rackcdn.com/assets/googleplus30x30.png" border=0></a>
+      <a target="_blank" title="follow us on pinterest" href="http://www.pinterest.com/nagulama.moses"><img alt="follow us on pinterest" src="https://c866088.ssl.cf3.rackcdn.com/assets/pinterest30x30.png" border=0></a>
+      <a target="_blank" title="follow us on youtube" href="http://www.youtube.com/nagulama.moses"><img alt="follow us on youtube" src="https://c866088.ssl.cf3.rackcdn.com/assets/youtube30x30.png" border=0></a>
+      <a target="_blank" title="follow us on Twitter" href="http://www.twitter.com/nagulama.moses"><img alt="follow us on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter30x30.png" border=0></a>
+    </div>
+    </div>
+
+   <div class="w3-container w3-indigo w3-margin w3-mobile">
+   	<a href="{% url 'home' %}" class="w3-bar-item w3-button w3-hover-text">Home</a>
+      <div class="w3-dropdown-hover">
+        <button class="w3-button">About Us</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+         <a href="{% url 'Future' %}" class="w3-bar-item w3-button w3-hover-text">The Future Starts Now</a>
+        <a href="{% url 'fees' %}" class="w3-bar-item w3-button w3-hover-text">Fees Structure</a>
+        <a href="{% url 'facilities' %}" class="w3-bar-item w3-button w3-hover-text">Facilities & Services</a>
+        </div>  
+        </div>
+      <div class="w3-dropdown-hover">
+        <button class="w3-button">The School</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="{% url 'administration' %}" class="w3-bar-item w3-button w3-hover-text">Administration</a>
+        <a href="{% url 'school' %}" class="w3-bar-item w3-button w3-hover-text">School Calendar</a>
+        <a href="{% url 'Gallaries' %}" class="w3-bar-item w3-button w3-hover-text">Gallaries</a>
+        <a href="{% url 'Rules' %}" class="w3-bar-item w3-button w3-hover-text">Rules & Regulation</a>
+        </div>  
+        </div>
+      <a href="{% url 'news' %}" class="w3-bar-item w3-button w3-hover-text">News</a>
+        
+        <div class="w3-dropdown-hover">
+        <button class="w3-button">Academics</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="{% url 'holiday' %}" class="w3-bar-item w3-button w3-hover-text">Study Materials</a>
+        <!--<a href="#" class="w3-bar-item w3-button w3-hover-text">Non Teaching Staff</a> -->
+        <!--<a href="#" class="w3-bar-item w3-button w3-hover-text">Staff</a> -->
+        </div>  
+        </div>
+      <a href="{% url 'honors' %}" class="w3-bar-item w3-button w3-hover-text">Co-curricular</a>
+      <a href="{% url 'contact' %}" class="w3-bar-item w3-button w3-hover-text">Contact</a>
+    </div>
+    </div>
+<div class="w3-content w3-display-container w3-hover-opacity">
+<div class="w3-display-container mySlides">
+{% load static %} <img class="w3-animate-left  w3-round-xxlarge" style="width:100%;height: 500px;" src="{% static "catalog/images/29.jpg" %}" alt="home"/>
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+   <!--French Alps -->
+  </div>
+</div>
+<div class="w3-display-container mySlides">
+{% load static %} <img class="w3-animate-left  w3-round-xxlarge" style="width:100%;height: 500px;" src="{% static "catalog/images/6.jpg" %}" alt="home"/>
+</div>
+<div class="w3-display-container mySlides">
+{% load static %} <img class="w3-animate-left  w3-round-xxlarge" style="width:100%;height: 500px;" src="{% static "catalog/images/2.jpg" %}" alt="home"/>
+</div>
+<div class="w3-display-container mySlides">
+{% load static %} <img class="w3-animate-left  w3-round-xxlarge" style="width:100%;height: 500px;" src="{% static "catalog/images/7.jpg" %}" alt="home"/>
+</div>
+<div class="w3-display-container mySlides">
+{% load static %} <img class="w3-animate-left  w3-round-xxlarge" style="width:100%;height: 500px;" src="{% static "catalog/images/11.jpg" %}" alt="home"/>
+</div>
+<div class="w3-display-container mySlides">
+{% load static %} <img class="w3-animate-left  w3-round-xxlarge" style="width:100%;height: 500px;" src="{% static "catalog/images/4.jpg" %}" alt="home"/>
+</div>
+<div class="w3-display-container mySlides">
+{% load static %} <img class="w3-animate-left  w3-round-xxlarge" style="width:100%;height: 500px;" src="{% static "catalog/images/9.jpg" %}" alt="home"/>
+</div>
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+<div class="centered ">
+<p style="font-size: 2.5em; color: white">No Gain Without Pain</p>
+<p style="font-size: 1.65em; color: white">welcome to Bulucheke secondary school</p>
+<div class="w3-container w3-padding-64 w3-panel">
+<a href="Facilities.html" class="w3-bar-item w3-button w3-hover-text w3-blue w3-round-xxlarge">Discover More</a>
+<a href="contact.html" class="w3-bar-item w3-button w3-hover-text w3-blue w3-round-xxlarge">Connect With Us</a>
+<div class="w3-panel w3-blue w3-display-container w3-round-xxlarge">
+<span onclick="this.parentElement.style.display='none'" class="w3-button w3-blue w3-large w3-display-topright">&times;</span>
+<h3>Info!</h3>
+<p>welcome to bulucheke secondary school explore to learn more.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="w3-container w3-border w3-margin w3-blue w3-center">
+<div class="w3-row w3-container w3-margin">
+	{% load static %} <img class="w3-circle" style="width:90%;height: 500px;" src="{% static "catalog/images/9.jpg" %}" alt="home"/>
+ <!--<img class="w3-circle"  src="images/9.jpg" alt="google.com" style="width:90%;height: 500px;"> -->
+ <p class="w3-center w3-xlarge w3-blue"> About our School </p>
+ <p style="font-size: 0.875em;">we are one of the best, most diverse secondary schools in the uganda. Bulucheke was ranked among the nine four-star schools in uganda accrding to the 2009 ministry of education and sports ranking of private secondary school.</p>
+ <p style="font-size: 0.875em;">we provide a carefully assembled package that includes the academics,co-curricular and the christian social life well guided by our qualified staff. our christian and result-oriened approach to issues has proved appropriate.</p>
+</div>
+<a href="Administraton.html" class="w3-bar-item w3-button w3-hover-text w3-grey w3-round-xxlarge">LEARN MORE</a>
+</div>
+
+<div class="w3-container w3-border w3-blue w3-margin">
+  <div class="w3-container w3-row-padding ">
+<div class="w3-panel w3-third w3-padding-32 w3-indigo w3-hover-text-white w3-round-xxlarge w3-center" >
+  <p style="font-size: 0.875em;"> Having been at Bulucheke changed my life so much, iam  what i am because of being at Bulucheke,i appreciate the entire staff and all my OBs and OGs. God bless you.</p>
+  <p style="font-size: 0.875em;"> Joel Nahurira</p>
+  <p style="font-size: 0.875em;">2009-2010</p>
+</div>
+<div class="w3-panel w3-third w3-padding-32 w3-white w3-hover-text-blue w3-round-xxlarge w3-center">
+ <p style="font-size: 0.875em;"> Having been at Bulucheke changed my life so much, iam  what i am because of being at Bulucheke,i appreciate the entire staff and all my OBs and OGs. God bless you.</p>
+  <p style="font-size: 0.875em;"> Joel Nahurira</p>
+  <p style="font-size: 0.875em;">2009-2010</p>
+  </div>
+ <div class="w3-panel w3-third w3-padding-32 w3-indigo w3-hover-text-white w3-round-xxlarge w3-center" >
+ <p style="font-size: 0.875em;"> Having been at Bulucheke changed my life so much, iam  what i am because of being at Bulucheke,i appreciate the entire staff and all my OBs and OGs. God bless you.</p>
+  <p style="font-size: 0.875em;"> Joel Nahurira</p>
+  <p style="font-size: 0.875em;">2009-2010</p>
+ </div>
+ </div>
+</div>
+<div class="w3-container w3-border w3-row w3-margin w3-center w3-blue">
+    <p>Upcoming School Events</p>
+<div class="w3-container w3-row w3-margin">
+<div class="w3-container w3-third">
+{% load static %} <img class="w3-round-xxlarge w3-hover-opacity" style="width:100%;height: 200px; cursor: pointer;" onclick="document.getElementById('id01').style.display='block'" src="{% static "catalog/images/31.jpg" %}" alt="home"/>
+</div>
+<div class="w3-container w3-third">
+ {% load static %} <img class="w3-round-xxlarge w3-hover-opacity" style="width:100%;height: 200px; cursor: pointer;" onclick="document.getElementById('id01').style.display='block'" src="{% static "catalog/images/29.jpg" %}" alt="home"/>
+  </div>
+ <div class="w3-container w3-third">
+ {% load static %} <img class="w3-round-xxlarge w3-hover-opacity" style="width:100%;height: 200px; cursor: pointer;" onclick="document.getElementById('id01').style.display='block'" src="{% static "catalog/images/7.jpg" %}" alt="home"/>
+  </div>
+ </div>
+ <a href="Galleries.html" class="w3-bar-item w3-button w3-hover-text w3-grey w3-round-xxlarge">MORE EVENTS</a>
+</div> 
+
+<footer class="w3-row-padding w3-margin w3-black">
+  <div class="w3-quarter w3-padding-32">
+  	{% load static %} <img style="width:30%;" src="{% static "catalog/images/badge.jpg" %}" alt="home"/>
+    <div class="w3-row-padding w3-container w3-margin">
+      <a target="_blank" title="follow us on instagram" href="http://www.instagram.com/nagulama.moses"><img alt="follow us on instagram" src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram30x30.png" border=0></a>
+
+      <a target="_blank" title="follow us on facebook" href="http://www.facebook.com/nagulama.moses"><img alt="follow us on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook30x30.png" border=0></a>
+
+      <a target="_blank" title="follow us on google plus" href="https://plus.google.com/nagulama.moses"><img alt="follow us on google plus" src="https://c866088.ssl.cf3.rackcdn.com/assets/googleplus30x30.png" border=0></a>
+      <a target="_blank" title="follow us on pinterest" href="http://www.pinterest.com/nagulama.moses"><img alt="follow us on pinterest" src="https://c866088.ssl.cf3.rackcdn.com/assets/pinterest30x30.png" border=0></a>
+      <a target="_blank" title="follow us on youtube" href="http://www.youtube.com/nagulama.moses"><img alt="follow us on youtube" src="https://c866088.ssl.cf3.rackcdn.com/assets/youtube30x30.png" border=0></a>
+      <a target="_blank" title="follow us on Twitter" href="http://www.twitter.com/nagulama.moses"><img alt="follow us on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter30x30.png" border=0></a>
+    </div>
+  </div>
+  <div >
+      <p><b>The Official website of Bulucheke Secondary school</b></p>
+  </div>
+  </footer>
+  </div>
+	<!--script for slide show -->
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n){
+        showDivs(slideIndex += n);
+    }
+    function showDivs(n){
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (var i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+    }
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+   // var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    //for (i = 0; i < dots.length; i++) {
+    //    dots[i].className = dots[i].className.replace(" active", "");
+   // }
+    slides[slideIndex-1].style.display = "block";  
+   // dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
+<script>
+  $(document).ready(function(){
+  $(".latest").on({
+    mouseenter: function(){
+        $(this).css("background-color", "lightgray");
+    }, 
+    mouseleave: function(){
+        $(this).css("background-color", "lightblue");
+    }
+});
+
+});
+
+  window.onscroll = function(){myFunction()};
+  var header = document.getElementById("myHeader");
+  var sticky = header.offsetTop;
+  function myFunction(){
+    if (window.pageYoffset > sticky) {
+      header.classList.remove("sticky");
+    }
+  }
+</script>
+
+</body>
+</html>
