@@ -54,7 +54,28 @@ def contact(request):
   #  post = get_object_or_404(Post, pk=pk)
     return render(request, 'catalog/contact.html')
 
-	
+def s1(request):
+  #  post = get_object_or_404(Post, pk=pk)
+    return render(request, 'catalog/s1.html')
+
+def s2(request):
+  #  post = get_object_or_404(Post, pk=pk)
+    return render(request, 'catalog/s2.html')
+
+def s3(request):
+  #  post = get_object_or_404(Post, pk=pk)
+    return render(request, 'catalog/s3.html')	
+
+def s4(request):
+  #  post = get_object_or_404(Post, pk=pk)
+    return render(request, 'catalog/s4.html')
+
+def s5(request):
+  #  post = get_object_or_404(Post, pk=pk)
+    return render(request, 'catalog/s5.html')
+def s6(request):
+  #  post = get_object_or_404(Post, pk=pk)
+    return render(request, 'catalog/s6.html')
 def contactView(request):
     if request.method == 'GET':
         form = ContactForm()

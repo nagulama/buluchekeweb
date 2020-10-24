@@ -59,6 +59,28 @@
       <a href="{% url 'contact' %}" class="w3-bar-item w3-button w3-hover-text">Contact</a>
     </div>
     </div>
+     <div class="w3-container w3-blue w3-margin w3-center w3-xlarge w3-round-xxlarge ">
+      <p>Latest Galleries</p>
+    </div>
+<div class="w3-row-padding">
+  <div class="w3-container w3-third">
+    {% load static %} <img class="w3-round-xxlarge w3-hover-opacity" style="width: 100%;cursor: pointer;" onclick="onClick(this)" src="{% static "catalog/images/29.jpg" %}" alt="home"/>
+  </div>
+  <div class="w3-container w3-third">
+    {% load static %} <img class="w3-round-xxlarge w3-hover-opacity" style="width: 100%;cursor: pointer;" onclick="onClick(this)" src="{% static "catalog/images/29.jpg" %}" alt="home"/>
+  </div>
+  <div class="w3-container w3-third ">
+    {% load static %} <img class="w3-round-xxlarge w3-hover-opacity" style="width: 100%;cursor: pointer;" onclick="onClick(this)" src="{% static "catalog/images/29.jpg" %}" alt="home"/>
+  </div>
+</div>
+
+<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+  <div class="w3-modal-content w3-animate-zoom">
+    <img id="img01" style="width: 90%;">
+  </div>
+</div>
+
 
 
 

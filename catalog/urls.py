@@ -17,6 +17,12 @@ urlpatterns = [
     path('news/', views.news, name='news'),
     path('Rules/', views.Rules, name='Rules'),
     path('school/', views.school, name='school'),
+    path('s1/', views.school, name='s1'),
+    path('s2/', views.school, name='s2'),
+    path('s3/', views.school, name='s3'),
+    path('s4/', views.school, name='s4'),
+    path('s5/', views.school, name='s5'),
+    path('s6/', views.school, name='s6'),
     #path('email/', views.school, name='email'),
 
    # path('email/', contactView, name='email'),
